@@ -1,0 +1,1320 @@
+
+@font-face {
+  font-family: 'Visby Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Regular'), url('../font/VisbyRegular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Bold Italic'), url('../font/VisbyBold Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Bold'), url('../font/VisbyBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Extrabold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Extrabold Italic'), url('../font/VisbyExtrabold Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Extrabold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Extrabold'), url('../font/VisbyExtrabold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Heavy Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Heavy Italic'), url('../font/VisbyHeavy Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Heavy'), url('../font/VisbyHeavy.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Italic'), url('../font/VisbyItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Light Italic'), url('../font/VisbyLight Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Light'), url('../font/VisbyLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Medium Italic'), url('../font/VisbyMedium Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Medium'), url('../font/VisbyMedium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Semibold Italic'), url('../font/VisbySemibold Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Semibold'), url('../font/VisbySemibold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Thin Italic'), url('../font/VisbyThin Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Visby Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Visby Thin'), url('../font/VisbyThin.woff') format('woff');
+  }
+
+
+body {
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0!important;
+  top: 0!important;
+  border: 0!important;
+  padding: 0!important;
+}
+
+.backgroundShadow {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+
+
+
+.addSpace {
+  position: absolute;
+  left: 37.125rem;
+  top: 0;
+  width: 20rem;
+  height: 10.5rem;
+  background-image: url('../img/addSpace.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.addSpacee {
+  position: absolute;
+  left: 37.125rem;
+  top: 0;
+  width: 20rem;
+  height: 10.5rem;
+  background-image: url('../img/addSpace.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+
+.playButton {
+  position: absolute;
+  left: 50.125rem;
+  top: 0;
+  width: 20rem;
+  height: 13.75rem;
+  background-image: url('../img/play.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.playButtonnn {
+  position: absolute;
+  left: 50.125rem;
+  top: 0;
+  width: 20rem;
+  height: 13.75rem;
+  background-image: url('../img/play.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.playButtonText {
+  position: absolute;
+  top: 3.5rem;
+  color: white;
+  font-family: 'Visby Bold';
+  font-size: 1.875rem;
+}
+
+.deleteSpace {
+  position: absolute;
+  right: 37.125rem;
+  top: 0;
+  width: 20rem;
+  height: 10.5rem;
+  background-image: url('../img/deleteSpace.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+    /* filter: grayscale(100%);
+  opacity: 0.5; */
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.deleteSpaceeee {
+  position: absolute;
+  right: 37.125rem;
+  top: 0;
+  width: 20rem;
+  height: 10.5rem;
+  background-image: url('../img/deleteSpace.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+    /* filter: grayscale(100%);
+  opacity: 0.5; */
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.deleteSpaceText {
+  position: absolute;
+  top: 3.5rem;
+  color: white;
+  font-family: 'Visby Light';
+  font-size: 1.25rem;
+}
+
+.addSpaceText {
+  position: absolute;
+  top: 3.5rem;
+  color: white;
+  font-family: 'Visby Light';
+  font-size: 1.25rem;
+}
+
+
+.topbaricon {
+  background-image: url('../img/topbaricon.svg');
+}
+
+
+
+.characterInfo-Name {
+  position: absolute;
+  top: 11.875rem;
+  left: 4.5625rem;
+  font-family: 'Visby Bold';
+  color: white;
+  font-size: 2.4375rem;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-LevelIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 17.5625rem;
+  left: 4.625rem;
+  background-image: url(../img/levelicon.svg);
+  background-repeat: no-repeat;
+
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-LevelBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 17.0625rem;
+  left: 8.3125rem;
+  background: linear-gradient(180deg, rgba(64, 31, 127, 0.027) 0%, rgba(70, 17, 159, 0.616) 100%);
+  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 2s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-LevelName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-LevelValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+.characterInfo-XP {
+  position: absolute;
+  width: 100%;
+  height: 0.25rem;
+  background: #4E2896;
+  bottom: 0;
+}
+
+.characterInfo-XPValue {
+  position: absolute;
+  width: 33%;
+  height: 0.25rem;
+  background: #B08DF2;
+  bottom: 0;
+}
+
+
+
+
+.characterInfo-GenderIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 21.5rem;
+  left: 4.625rem;
+  background-image: url(../img/gendermale.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 2s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-GenderBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 21rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 3s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-GenderName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-GenderValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+
+
+
+
+.characterInfo-NationIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 25.4375rem;
+  left: 4.625rem;
+  background-image: url(../img/nation.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 3s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-NationBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 24.9375rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 4s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-NationName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-NationValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+
+
+
+.characterInfo-AgeIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 29.375rem;
+  left: 4.625rem;
+  background-image: url(../img/age.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 4s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-AgeBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 28.875rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 5s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-AgeName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-AgeValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+
+
+
+
+
+
+.characterInfo-MoneyIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 33.3125rem;
+  left: 4.625rem;
+  background-image: url(../img/money.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 5s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-MoneyBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 32.8125rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 6s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-MoneyName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-MoneyValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: #00DB8F;
+  font-size: 0.875rem;
+
+}
+
+
+
+
+
+.characterInfo-BankIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 37.25rem;
+  left: 4.625rem;
+  background-image: url(../img/money.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 6s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-BankBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 36.75rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 7s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-BankName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-BankValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: #CFB5FF;
+  font-size: 0.875rem;
+
+}
+
+
+.characterInfo-OnlineIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 41.1875rem;
+  left: 4.625rem;
+  background-image: url(../img/online.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 7s; /* don't forget to set a duration! */
+
+
+}
+
+.characterInfo-OnlineBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 40.6875rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 8s; /* don't forget to set a duration! */
+
+}
+
+.characterInfo-OnlineName {
+  position: absolute;
+  left: 0.875rem;
+  font-family: 'Visby Medium';
+  color: white;
+  font-size: 1.1875rem;
+}
+
+.characterInfo-OnlineValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+
+
+
+.characterSelection {
+  position: absolute;
+
+  bottom: 1.875rem;
+  height: 12.5rem;
+  width: 100%;
+  /* background-color: #00DB8F; */
+  /* left: 37.5rem; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+
+}
+
+
+.characterSelectionText {
+  /* position: absolute; */
+  position: relative;
+  transform: rotate(-90deg);
+  bottom: -4.6875rem;
+  /* left: -5rem; */
+  width: 0.625rem;
+  font-family: 'Visby Bold';
+  color: white;
+  font-size: 1.8125rem;
+  font-weight: 700;
+}
+
+
+.characterSelection-Box {
+  position: relative;
+  display: inline-block;
+  width: 16.375rem;
+  height: 11.4375rem;
+  /* margin: 0.4375rem; */
+  margin-right: 0.4375rem;
+  border-bottom: 0.25rem solid #7E7E7E;
+  background: linear-gradient(180deg, rgba(60, 60, 60, 0.027) 0%, rgba(60, 60, 60, 0.616) 100%);
+}
+
+
+.Selection {
+  border-bottom: 0.25rem solid #B08DF2;
+  background: linear-gradient(180deg, rgba(64, 31, 127, 0.027) 0%, rgba(70, 17, 159, 0.616) 100%);
+}
+
+
+.characterSelection-Box-Gender {
+  position: relative;
+  width: 1.875rem;
+  height: 1.875rem;
+
+  top: 3.125rem;
+  left: 1.875rem;
+}
+
+
+.Male {
+  background-image: url('../img/maleicon.svg');
+  background-size: 100% 100%;
+}
+
+.Female {
+  background-image: url('../img/femaleicon.svg');
+  background-size: 100% 100%;
+}
+
+.characterSelection-Box-Name {
+  position: absolute;
+
+  top: 5.9375rem;
+  left: 1.875rem;
+  font-size: 1.1875rem;
+  color: white;
+  font-family: 'Visby Medium';
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 14.375rem;
+}
+
+.characterSelection-Box-Level {
+  position: absolute;
+
+  top: 8.125rem;
+  left: 1.875rem;
+  font-size: 1.0625rem;
+  color: white;
+  font-family: 'Visby Thin';
+}
+
+
+
+.characterSelection-Box-Arrow {
+  position: absolute;
+  width: 0.4512rem;
+  height: 0.79rem;
+  top: 8.125rem;
+  left: 14.375rem;
+  background-image: url('../img/minarrow.svg');
+  background-size: 100% 100%;
+
+}
+
+.characterSelectionSettings {
+  position: relative;
+  max-width: 68.125rem;
+  /* min-width: 18.75rem; */
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+
+}
+
+
+
+
+
+.newcharacter-NameIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 17.5625rem;
+  left: 4.625rem;
+  background-image: url(../img/namelastname.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 1s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-NameBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 17.0625rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 2s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-NameValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+.newcharacter-NameInput {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 14px;
+}
+
+
+
+.newcharacter-LastNameIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 21.625rem;
+  left: 4.625rem;
+  background-image: url(../img/namelastname.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 2s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-LastNameBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 21rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 3s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-LastNameValue {
+  position: absolute;
+  right: 0.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+.newcharacter-LastNameInput {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 14px;
+}
+
+
+
+.newcharacter-NationIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 25.425rem;
+  left: 4.625rem;
+  background-image: url(../img/nationfalan.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 3s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-NationBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 24.925rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 4s; /* don't forget to set a duration! */
+
+
+  z-index: 900;
+}
+
+
+.newcharacter-NationSelect {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 18px;
+  width: 97%;
+  padding-left: 14px;
+}
+
+option {
+  color: white;
+  background-color: rgba(14, 14, 14, 0.849);
+}
+
+select option:hover {
+  box-shadow: 0 0 10px 100px green inset;
+  color:white;
+}
+
+
+
+
+
+.newcharacter-GenderIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 29.325rem;
+  left: 4.625rem;
+  background-image: url(../img/gendermale.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 4s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-GenderBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 28.925rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 5s; /* don't forget to set a duration! */
+
+  z-index: 899;
+}
+
+
+
+
+.newcharacter-DateIcon {
+  position: absolute;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  top: 33.325rem;
+  left: 4.625rem;
+  background-image: url(../img/date.svg);
+  background-repeat: no-repeat;
+
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 5s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-DateBG {
+  position: absolute;
+  width: 27.375rem;
+  height: 3.5625rem;
+  top: 32.925rem;
+  left: 8.3125rem;
+  background: linear-gradient(179.65deg, rgba(72, 72, 72, 0.384) 20.27%, rgba(14, 14, 14, 0.373) 84.68%);  display: flex;
+  align-items: center;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-delay: 6s; /* don't forget to set a duration! */
+
+}
+
+.newcharacter-DateValue {
+  position: absolute;
+  right: 32.875rem;
+  font-family: 'Visby Thin';
+  color: white;
+  font-size: 1.0625rem;
+
+}
+
+
+.newcharacter-DateInput {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 14px;
+}
+
+
+
+
+
+
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+
+::placeholder {
+  color: white;
+}
+
+
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width: 4096px) and (height: 2160px) {
+  html {
+    font-size: 31px;
+  }
+}
+@media screen and (width: 2560px) and (height: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.3px;
+  }
+}
+@media screen and (width: 1400px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+} /*# sourceMappingURL=app.css.map */
+
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: none;
+  width: 2px;
+  height: 5px;
+}
+
+::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: none;
+  height: 5px;
+
+}
+
+::-webkit-scrollbar-thumb
+{
+  width: 2px;
+
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #B08DF2;
+}
+
+
+
+
+
+
+
+
+
+
+details {
+	position: relative;
+	width: 100%;
+	margin-right: 1rem;
+  font-family: 'Visby Thin';
+}
+
+details[open] {
+	z-index: 4;
+}
+
+summary {
+	padding: .4rem;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: transparent;
+  color: white;
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+details[open] summary:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+summary:after {
+	content: '';
+	display: inline-block;
+	float: right;
+	width: .5rem;
+	height: .5rem;
+  margin-top: .2rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+summary:focus {
+	outline: none;
+}
+
+details[open] summary:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+ul {
+  width: 104%;
+  background:rgb(72, 72, 72);
+  color: white;
+	position: absolute;
+	top: calc(100% + .9rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+  font-weight: 700;
+}
+
+li {
+	margin: 0;
+	padding: .6rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+li:first-child {
+	padding-top: 0;
+}
+
+li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+summary.radios {
+	counter-reset: radios;
+  width: 97%;
+
+}
+
+summary.radios:before {
+	content: var(--selection);
+}
+
+input[type=radio] {
+	counter-increment: radios;
+	appearance: none;
+	display: none;
+  color: white;
+}
+
+input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+
+input[type=radio]:after {
+	content: attr(title);
+	display: inline;
+  font-size: 18px;
+}
+
+ul.list {
+	counter-reset: labels;
+}
+
+label {
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+label span {
+	--display: none;
+	display: var(--display);
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #727272;
+	border-radius: 3px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.DarkTema {
+  filter: grayscale(100%);
+}

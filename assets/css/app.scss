@@ -1,0 +1,815 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body {
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+
+}
+
+
+.borderagam2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-135deg, #00bdd671 17rem, rgba(0, 0, 0, 0) 50rem);
+}
+
+.borderagam3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(45deg, #00bdd671 17rem, rgba(0, 0, 0, 0) 50rem);
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.character {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 22.5rem;
+  height: 31.813rem;
+  background: #171920;
+  border-radius: 1.25rem;
+}
+.character h1 {
+  position: absolute;
+  width: 16rem;
+  height: 5.875rem;
+  top: 2.3rem;
+  left: 3.5rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.938rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.character > iconbg {
+  position: absolute;
+  width: 2.364rem;
+  height: 1.871rem;
+  left: 10.8rem;
+  top: 1.5rem;
+  background: #00BCD6;
+  box-shadow: 0px 0px 41px rgba(0, 188, 214, 0.49);
+  border-radius: 5px;
+  transform: matrix(0.99, 0, -0.11, 1, 0, 0);
+}
+.character > iconbg > icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 0.5rem;
+  left: 0.75rem;
+  position: absolute;
+  background-image: url("../img/icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selection {
+  background-repeat: no-repeat;
+  background-size: contain;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  margin: auto auto;
+  left: 2.55rem;
+  width: 26rem;
+  height: 9.5rem;
+  top: 15.5rem;
+  z-index: 1;
+}
+.selection > remove {
+  position: fixed;
+  height: 3.875rem;
+  top: 30.5rem;
+  left: 4.2em;
+  width: 20rem;
+  margin-left: 2rem;
+  background: rgba(53, 57, 73, 0.67);
+  border-radius: 0.625rem;
+  float: left;
+}
+.selection > remove > icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1.4rem;
+  left: 5rem;
+  position: absolute;
+  background-image: url("../img/remove.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.selection > remove > icon > h1 {
+  position: absolute;
+  width: 11rem;
+  text-align: center;
+  top: -0.6rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #E0E0E0;
+}
+.selection > add {
+  position: fixed;
+  height: 3.875rem;
+  top: 25.9rem;
+  left: 4.2em;
+  width: 20rem;
+  margin-left: 2rem;
+  background: rgba(53, 57, 73, 0.67);
+  border-radius: 0.625rem;
+  float: left;
+}
+.selection > add > icon {
+  top: 1.2rem;
+  left: 5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-image: url("../img/add.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.selection > add > icon > h1 {
+  position: absolute;
+  width: 10rem;
+  text-align: center;
+  top: -0.4rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #91D600;
+}
+.selection > border {
+  position: relative;
+  background: #21242F;
+  top: 1rem;
+  left: 1.7rem;
+  width: 20rem;
+  height: 3.8rem;
+  margin-left: 2rem;
+  margin-bottom: 0.55rem;
+  float: left;
+  border-radius: 0.625rem;
+}
+.selection > border > right {
+  width: 1.5rem;
+  left: 17.8rem;
+  top: 1.2rem;
+  height: 1.5rem;
+  position: absolute;
+  background-image: url("../img/right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.selection > border > icon {
+  top: 1.2rem;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-image: url("../img/avatar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.selection > border > icon > h1 {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  text-align: left;
+  left: 2.1rem;
+  top: -1rem;
+  color: #E0E0E0;
+}
+.selection > border > icon > h2 {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: rgba(224, 224, 224, 0.5);
+  width: 8rem;
+  top: 0.35rem;
+}
+
+.infobg {
+  position: absolute;
+  width: 22.5rem;
+  height: 25.75rem;
+  left: 90rem;
+  top: 23rem;
+  background: #171920;
+  border-radius: 20px;
+}
+.infobg > iconbg {
+  position: absolute;
+  width: 2.364rem;
+  height: 1.871rem;
+  left: 10.6rem;
+  top: 0.5rem;
+  background: #00BCD6;
+  box-shadow: 0px 0px 41px rgba(0, 188, 214, 0.49);
+  border-radius: 5px;
+  transform: matrix(0.99, 0, -0.11, 1, 0, 0);
+}
+.infobg > icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  left: 11.4rem;
+  top: 1rem;
+  position: absolute;
+  background-image: url("../img/icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.infobg > h1 {
+  position: absolute;
+  width: 22.875rem;
+  height: 2.938rem;
+  top: 0.9rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.938rem;
+  color: #FFFFFF;
+  overflow:hidden; /* Verilen genişlikten (150px) artanı gizlemesini istiyoruz */
+  white-space: nowrap; /* Yazıyı tek satırla sınırlandırıyoruz */
+  text-overflow:ellipsis; /* Yazının kesildiği yerden üç nokta vermesini sağlıyoruz*/
+}
+
+.levelbg {
+  position: absolute;
+  width: 20rem;
+  height: 3.875rem;
+  left: 91.2rem;
+  top: 29.4rem;
+  background: #21242F;
+  border-radius: 10px;
+}
+.levelbg > h1 {
+  position: absolute;
+  top: -0.01rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  width: 5rem;
+  text-align: center;
+  color: #E0E0E0;
+
+}
+.levelbg > h2 {
+  position: absolute;
+  top: -0.2rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  width: 35.5rem;
+  text-align: center;
+  color: #E0E0E0;
+}
+.levelbg > loadbg {
+  position: absolute;
+  width: 17.5rem;
+  height: 0.75rem;
+  top: 2rem;
+  left: 1.3rem;
+  background: #171920;
+  border-radius: 10px;
+}
+.levelbg > loadbg > load {
+  position: absolute;
+  width: 30%;
+  height: 0.75rem;
+  background: #00BCD6;
+  box-shadow: 0px 0px 41px rgba(0, 188, 214, 0.49);
+  border-radius: 10px;
+}
+
+.playerinfo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  margin: auto auto;
+  left: 90rem;
+  width: 26rem;
+  height: 13.9rem;
+  top: 34.4rem;
+  z-index: 1;
+}
+.playerinfo > type {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 18.75rem;
+  height: 0px;
+  margin-left: 2rem;
+  top: 2rem;
+  margin-bottom: 2.5rem;
+  float: left;
+  border-radius: 0.625rem;
+}
+.playerinfo > type > h1 {
+  position: absolute;
+  width: 3.625rem;
+  top: -2.5rem;
+  height: 1.125rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  color: #8C8C8C;
+}
+.playerinfo > type > h2 {
+  position: absolute;
+  width: 31.5rem;
+  height: 1.125rem;
+  top: -2.7rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.start {
+  position: absolute;
+  width: 11.294rem;
+  height: 3.018rem;
+  left: 54.509rem;
+  top: 58.25rem;
+  background: #00BCD6;
+  box-shadow: 0px 0px 41px rgba(0, 188, 214, 0.49);
+  border-radius: 5px;
+  transform: matrix(0.99, 0, -0.11, 1, 0, 0);
+}
+.start > h1 {
+  position: absolute;
+  width: 11.5rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.438rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newcharacter {
+  position: absolute;
+  width: 22.5rem;
+  height: 27.625rem;
+  left: 90rem;
+  top: 20rem;
+  background: rgba(16, 21, 29, 0.672);
+  border-radius: 4px;
+}
+.newcharacter >  icon {
+  position: absolute;
+  width: 2.364rem;
+  height: 1.871rem;
+  left: 10.5rem;
+  top: 0.7rem;
+  background: #00BCD6;
+  box-shadow: 0px 0px 41px rgba(0, 188, 214, 0.49);
+  border-radius: 5px;
+  transform: matrix(0.99, 0, -0.11, 1, 0, 0);
+}
+.newcharacter >  icon > images {
+  width: 0.938rem;
+  height: 0.938rem;
+  left: 0.7rem;
+  top: 0.45rem;
+  position: absolute;
+  background-image: url("../img/create.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  icon > images > h1 {
+  position: absolute;
+  width: 20rem;
+  font-family: "Roboto";
+  color: white;
+  left: -8rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.938rem;
+  transform: scale(0.95);
+  text-align: justify;
+}
+.newcharacter >  firstname {
+  position: absolute;
+  width: 20rem;
+  height: 3.25rem;
+  left: 1.2rem;
+  top: 6.7rem;
+  background: #21242F;
+  border-radius: 1.25rem;
+  transform: scale(0.95);
+}
+.newcharacter >  firstname > icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1rem;
+  left: 1.5rem;
+  position: absolute;
+  background-image: url("../img/avatar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  firstname > icon > input {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  background: none;
+}
+.newcharacter >  lastname {
+  position: absolute;
+  width: 20rem;
+  height: 3.25rem;
+  left: 1.2rem;
+  top: 10.7rem;
+  background: #21242F;
+  border-radius: 1.25rem;
+  transform: scale(0.95);
+}
+.newcharacter >  lastname > icon {
+  width: 1.375rem;
+  height: 0.875rem;
+  top: 1.2rem;
+  left: 1.5rem;
+  position: absolute;
+  background-image: url("../img/user.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  lastname > icon > input {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 2.5rem;
+  top: -0.17rem;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  background: none;
+}
+.newcharacter >  date {
+  position: absolute;
+  width: 20rem;
+  height: 3.25rem;
+  left: 1.2rem;
+  top: 14.6rem;
+  background: #21242F;
+  border-radius: 1.25rem;
+  transform: scale(0.95);
+}
+.newcharacter >  date > icon {
+  width: 1.375rem;
+  height: 0.875rem;
+  top: 1.2rem;
+  left: 1.5rem;
+  position: absolute;
+  background-image: url("../img/date.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  date > icon > input {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 2.5rem;
+  top: -0.17rem;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  background: none;
+}
+.newcharacter >  sex {
+  position: absolute;
+  width: 20rem;
+  height: 3.25rem;
+  left: 1.2rem;
+  top: 18.6rem;
+  background: #21242F;
+  border-radius: 1.25rem;
+  transform: scale(0.95);
+}
+.newcharacter >  sex > icon {
+  width: 1.375rem;
+  height: 0.875rem;
+  top: 1.2rem;
+  left: 1.5rem;
+  position: absolute;
+  background-image: url("../img/sex.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  sex > icon > select {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 2.5rem;
+  top: -0.17rem;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.newcharacter >  sex > icon > select > option{
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  left: 2.5rem;
+  top: -0.17rem;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  background: none;
+  background-color: #21242F;
+}
+.newcharacter >  create {
+  position: absolute;
+  width: 20rem;
+  height: 3.875rem;
+  top: 22.9rem;
+  left: 1.2rem;
+  background: #353949;
+  border-radius: 10px;
+  transform: scale(0.95);
+}
+.newcharacter >  create > icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1.2rem;
+  left: 1.5rem;
+  position: absolute;
+  background-image: url("../img/create.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.newcharacter >  create > icon > input {
+  position: absolute;
+  width: 17.5rem;
+  top: 0.2rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E0E0E0;
+  background-color: transparent;
+  border: 0;
+}
+
+.select {
+  border-bottom: 2px outset #0DF6CC;
+}
+
+.loading-rondje {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 1vh;
+}
+
+.loading-rondje > p {
+  color: white;
+  margin-top: 1vh;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 0px #00000085;
+}
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width: 4096px) and (height: 2160px) {
+  html {
+    font-size: 31px;
+  }
+}
+@media screen and (width: 2560px) and (height: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.3px;
+  }
+}
+@media screen and (width: 1400px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=app.css.map */
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 0;
+}

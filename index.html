@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>es-multi</title>
+      <link rel="stylesheet" href="../assets/css/app.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app" v-if="nui">
+        <div class="backgroundShadow"></div>
+        <div class="addSpace animate__animated" @click="New()" v-if="addspace == false && addspacee == false">
+          <div class="addSpaceText" >
+            <object style="width: 18px;" type="image/svg+xml" data="./assets/img/topbaricon.svg">
+            </object> {{translations['addSpace']}}</div>
+        </div>
+        <div class="addSpacee animate__animated" @click="SelectionMenu()" :class="{ DarkTema : disabledselection == true }" v-if="addspace && addspacee">
+          <div class="addSpaceText" >
+            <object style="width: 18px;" type="image/svg+xml" data="./assets/img/topbaricon.svg">
+            </object> {{translations['selection']}}</div>
+        </div>
+        <div class="playButton animate__animated" v-if="addspace == false && addspacee == false">
+          <div class="playButtonText" @click="PlayCharacter()">{{translations['play']}}</div>
+        </div>
+        <div class="playButtonnn animate__animated" v-if="addspace && addspacee">
+          <div class="playButtonText" @click="CreateCharacter()">{{translations['create']}}</div>
+        </div>
+        <div class="deleteSpace animate__animated" v-if="addspace == false && addspacee == false">
+          <div class="deleteSpaceText" @click="DeleteCharacter()">
+          <object style="width: 18px;" type="image/svg+xml" data="./assets/img/topbaricon.svg">
+          </object> {{translations['deleteSpace']}}</div>
+        </div>
+        <div class="deleteSpaceeee animate__animated" :class="{ DarkTema : disableddelete == true }" v-if="addspace && addspacee">
+          <div class="deleteSpaceText">
+          <object style="width: 18px;" type="image/svg+xml" data="./assets/img/topbaricon.svg">
+          </object> {{translations['deleteSpace']}}</div>
+        </div>
+
+        <div class="newcharacter" v-if="addspace">
+          <div class="characterInfo-Name  animate__animated">{{translations['newCharacter']}}</div>
+          <div class="newcharacter-Name">
+            <div class="newcharacter-NameIcon  animate__animated"></div>
+            <div class="newcharacter-NameBG  animate__animated">
+              <input type="text" class="newcharacter-NameInput" v-model="CharacterCreatorInput.firstname" :placeholder="translations['firstName']">
+            </div>
+          </div>
+
+          <div class="newcharacter-LastName">
+            <div class="newcharacter-LastNameIcon  animate__animated"></div>
+            <div class="newcharacter-LastNameBG  animate__animated">
+              <input type="text" class="newcharacter-LastNameInput" v-model="CharacterCreatorInput.lastname" :placeholder="translations['lastName']">
+            </div>
+          </div>
+
+
+          <div class="newcharacter-Nation">
+            <div class="newcharacter-NationIcon animate__animated"></div>
+            <div class="newcharacter-NationBG  animate__animated">
+              
+              <select class="newcharacter-NationSelect" v-model="CharacterCreatorInput.nation">
+                <option value="Nation"  disabled>{{translations['nation']}}</option>
+                <option :value="`${data}`" v-for="data in nationalities">{{data}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="newcharacter-Gender">
+            <div class="newcharacter-GenderIcon  animate__animated"></div>
+            <div class="newcharacter-GenderBG  animate__animated">
+              <select class="newcharacter-NationSelect" v-model="CharacterCreatorInput.gender">
+                <option value="Gender"  disabled>{{translations['gender']}}</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="newcharacter-Date">
+            <div class="newcharacter-DateIcon  animate__animated"></div>
+            <div class="newcharacter-DateBG  animate__animated">
+              <input type="date" class="newcharacter-DateInput" v-model="CharacterCreatorInput.birthdate" min="1900-01-01" max="2100-12-31">
+            </div>
+          </div>
+
+          
+
+        </div>
+
+        <div class="characterInfo animate__animated animate__fadeInLeftBig" v-if="characterInfo && addspace == false">
+          <div class="characterInfo-Name">{{onysubs.name}}</div>
+          <div class="characterInfo-Level">
+            <div class="characterInfo-LevelIcon animate__animated"></div>
+            <div class="characterInfo-LevelBG animate__animated">
+              <div class="characterInfo-LevelName">{{translations['level']}}</div>
+              <div class="characterInfo-LevelValue">{{onysubs.level}}</div>
+              <div class="characterInfo-XP">
+                <div class="characterInfo-XPValue" :style="{'width': `${onysubs.xp}%`}"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="characterInfo-Gender">
+            <div class="characterInfo-GenderIcon  animate__animated"></div>
+            <div class="characterInfo-GenderBG animate__animated">
+              <div class="characterInfo-GenderName">{{translations['gender']}}</div>
+              <div class="characterInfo-GenderValue">{{onysubs.gender}}</div>
+            </div>
+          </div>
+
+          <div class="characterInfo-Nation">
+            <div class="characterInfo-NationIcon  animate__animated"></div>
+            <div class="characterInfo-NationBG animate__animated">
+              <div class="characterInfo-NationName">{{translations['nation']}}</div>
+              <div class="characterInfo-NationValue">{{onysubs.nation}}</div>
+            </div>
+          </div>
+
+          <div class="characterInfo-Age">
+            <div class="characterInfo-AgeIcon  animate__animated"></div>
+            <div class="characterInfo-AgeBG animate__animated">
+              <div class="characterInfo-AgeName">{{translations['dateofbirth']}}</div>
+              <div class="characterInfo-AgeValue">{{onysubs.age}}</div>
+            </div>
+          </div>
+
+
+          <div class="characterInfo-Money">
+            <div class="characterInfo-MoneyIcon  animate__animated"></div>
+            <div class="characterInfo-MoneyBG animate__animated">
+              <div class="characterInfo-MoneyName">{{translations['cash']}}</div>
+              <div class="characterInfo-MoneyValue">{{onysubs.cash}}$</div>
+            </div>
+          </div>
+
+
+          <div class="characterInfo-Bank">
+            <div class="characterInfo-BankIcon  animate__animated"></div>
+            <div class="characterInfo-BankBG animate__animated">
+              <div class="characterInfo-BankName">{{translations['bank']}}</div>
+              <div class="characterInfo-BankValue">{{onysubs.bank}}$</div>
+            </div>
+          </div>
+
+          <div class="characterInfo-Online">
+            <div class="characterInfo-OnlineIcon  animate__animated"></div>
+            <div class="characterInfo-OnlineBG animate__animated">
+              <div class="characterInfo-OnlineName">{{translations['online']}}</div>
+              <div class="characterInfo-OnlineValue">{{onysubs.online}}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="characterSelection animate__animated animate__fadeInUpBig" v-if="addspace == false">
+          <div class="characterSelectionText">{{translations['characterSelection']}}</div>
+          <div class="characterSelectionSettings">
+            
+      
+            <div class="characterSelection-Box"  v-for="data in data" :class="{ Selection : select == data.identifier }" @click="Selection(data)">
+              <div class="characterSelection-Box-Gender" :class="data.gender"></div>
+              <div class="characterSelection-Box-Name">
+                {{data.name}}
+              </div>
+              <div class="characterSelection-Box-Level">
+                {{translations['level']}} {{data.level}}
+              </div>
+      
+              <div class="characterSelection-Box-Arrow"></div>
+            </div>
+      
+            
+            
+            
+      
+            
+      
+            
+          </div>
+      
+        </div>
+
+        
+    </div>
+    <script src="./assets/library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </body>
+</html>
